@@ -49,16 +49,6 @@ class segment():
 		self.amp = amp
 		
 		self.g = 1
-					 		   
-	def Rotate_Z(self,az,temp):
-		self.coordP = np.dot(Mz(az),self.coordP)
-		self.depthF()
-	def Rotate_Y(self,ay,temp):
-		self.coordP = np.dot(My(ay),self.coordP)
-		self.depthF()
-	def Rotate_X(self,ax,temp):
-		self.coordP = np.dot(Mx(ax),self.coordP)
-		self.depthF()
 	
 	def getX(self): return self.x
 	def getY(self): return self.y
