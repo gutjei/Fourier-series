@@ -29,28 +29,6 @@ def show_fps(window, clock):
     #window.blit(rr, (300, 0))
     #window.blit(lines, (Mx+50, My-50))
 
-
-def My(ay): 
-	a = np.array([[math.cos(ay),0,math.sin(ay),0],
-			   [0,1,0,0],
-			   [-math.sin(ay),0,math.cos(ay),0],
-			   [0,0,0,1]], float)
-
-	return a
-def Mx(ax):
-	a =  np.array([[1,0,0,0],
-			   [0,math.cos(ax),-math.sin(ax),0],
-			   [0,math.sin(ax),math.cos(ax),0],
-			   [0,0,0,1]], float)
-	return a
-def Mz(az):			   		   
-	a = np.array([[math.cos(az),-math.sin(az),0,0],
-			   [math.sin(az),math.cos(az),0,0],
-			   [0,0,1,0],
-			   [0,0,0,1]], float)
-			 
-	return a
-
 def speedT(g):
 	for i in newC:
 		i.speed = (2 * pi) / 53
